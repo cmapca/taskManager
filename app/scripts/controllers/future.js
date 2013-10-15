@@ -1,12 +1,18 @@
 'use strict';
 
 angular.module('taskManagerApp').controller('FutureCtrl', function ($scope, dateUtils) {
-  $scope.filteredTasks = [];
   $scope.today = dateUtils.getTodayDate().getTime();
 
-  angular.forEach($scope.tasks, function (item) {
-    if (!item.done && new Date(item.date).getTime() > $scope.today) {
-      $scope.filteredTasks.push(item);
-    }
-  });
+  init();
+
+  $scope.$on('refresh', init);
+
+  function init() {
+    $scope.filteredTasks = [];
+    angular.forEach($scope.tasks, function (item) {
+      if (!item.done && new Date(item.date).getTime() > $scope.today) {
+        $scope.filteredTasks.push(item);
+      }
+    });
+  }
 });

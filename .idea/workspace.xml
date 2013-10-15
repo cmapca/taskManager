@@ -2,35 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a19dd49-ebdb-4662-aa28-7fb6b3827aad" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/SmartCloud.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/done.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/done.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/done.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/expired.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/expired.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/expired.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/future.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/future.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/future.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/taskCreator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/taskCreator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/todays.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/todays.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/todays.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/undone.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/undone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/spec/controllers/undone.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/app.js" afterPath="$PROJECT_DIR$/app/scripts/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/controllers/taskManager.js" />
+      <change type="DELETED" beforePath="C:\Users\cMapca\Dropbox\work\SmartCloud\app\scripts\controllers\taskCreator.js" afterPath="" />
+      <change type="MOVED" beforePath="C:\Users\cMapca\Dropbox\work\SmartCloud\test\spec\controllers\taskCreator.js" afterPath="$PROJECT_DIR$/test/spec/controllers/taskManager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/done.html" afterPath="$PROJECT_DIR$/app/views/done.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/done.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/done.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/expired.html" afterPath="$PROJECT_DIR$/app/views/expired.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/expired.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/expired.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/future.html" afterPath="$PROJECT_DIR$/app/views/future.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/future.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/future.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/main.html" afterPath="$PROJECT_DIR$/app/views/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/main.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/todays.html" afterPath="$PROJECT_DIR$/app/views/todays.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/todays.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/todays.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/undone.html" afterPath="$PROJECT_DIR$/app/views/undone.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/undone.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/undone.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SmartCloud.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,64 +43,10 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/index.html">
+          <file leaf-file-name="dateUtils.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/scripts/services/dateUtils.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="30" column="22" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-11.115385" vertical-offset="221" max-vertical-offset="1462">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="8" column="8" selection-start="207" selection-end="207" vertical-scroll-proportion="0.15925059" vertical-offset="0" max-vertical-offset="854">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="future.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/future.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="75" selection-start="430" selection-end="430" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="future.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scripts/controllers/future.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="22" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="todays.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/todays.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="426" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="done.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/done.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="372" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="expired.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/expired.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="70" selection-start="427" selection-end="427" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
+                <state line="13" column="13" selection-start="410" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
                   <folding />
                 </state>
               </provider>
@@ -121,16 +55,52 @@
           <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/main.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="58" selection-start="399" selection-end="399" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
+                <state line="2" column="112" selection-start="188" selection-end="215" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dateUtils.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scripts/services/dateUtils.js">
+          <file leaf-file-name="done.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/done.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="18" column="28" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+                <state line="2" column="120" selection-start="230" selection-end="230" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="expired.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/expired.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="120" selection-start="231" selection-end="231" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="future.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/future.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="120" selection-start="229" selection-end="229" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="todays.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/views/todays.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="120" selection-start="229" selection-end="229" vertical-scroll-proportion="0.040047113" vertical-offset="0" max-vertical-offset="849">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="undone.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/undone.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2" column="120" selection-start="232" selection-end="232" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
                   <folding />
                 </state>
               </provider>
@@ -143,16 +113,45 @@
           <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+                <state line="11" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+                  <folding>
+                    <marker date="1381849201532" expanded="true" signature="103:217" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="taskManager.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/scripts/controllers/taskManager.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="47" column="21" selection-start="1516" selection-end="1528" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="969">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="taskCreator.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/scripts/controllers/taskCreator.js">
+          <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="6" column="5" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
+                <state line="8" column="8" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="64" column="45" selection-start="3035" selection-end="3035" vertical-scroll-proportion="-22.884615" vertical-offset="493" max-vertical-offset="1462">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="taskManager.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/spec/controllers/taskManager.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
                   <folding />
                 </state>
               </provider>
@@ -161,26 +160,52 @@
           <file leaf-file-name="done.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scripts/controllers/done.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="3" column="2" selection-start="93" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-                  <folding />
+                <state line="5" column="30" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+                  <folding>
+                    <marker date="1381849287127" expanded="true" signature="89:322" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="todays.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="todays.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scripts/controllers/todays.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+                <state line="12" column="23" selection-start="327" selection-end="327" vertical-scroll-proportion="0.23887588" vertical-offset="0" max-vertical-offset="854">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="expired.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="expired.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scripts/controllers/expired.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="7" column="8" selection-start="246" selection-end="260" vertical-scroll-proportion="0.136" vertical-offset="0" max-vertical-offset="875">
-                  <folding />
+                <state line="10" column="30" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+                  <folding>
+                    <marker date="1381849378772" expanded="true" signature="103:438" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="future.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/scripts/controllers/future.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="10" column="30" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+                  <folding>
+                    <marker date="1381849423344" expanded="true" signature="102:438" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="undone.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/scripts/controllers/undone.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="5" column="30" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+                  <folding>
+                    <marker date="1381849456799" expanded="true" signature="91:326" placeholder="{...}" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -205,22 +230,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/app/views/main.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/done.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/taskCreator.js" />
-        <option value="$PROJECT_DIR$/app/views/done.html" />
-        <option value="$PROJECT_DIR$/app/views/undone.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/undone.js" />
+        <option value="$PROJECT_DIR$/app/views/tasklist.html" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
-        <option value="$PROJECT_DIR$/app/views/todays.html" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/todays.js" />
-        <option value="$PROJECT_DIR$/app/views/expired.html" />
-        <option value="$PROJECT_DIR$/app/views/future.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/done.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/expired.js" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/future.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/undone.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/taskCreator.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
-        <option value="$PROJECT_DIR$/app/scripts/app.js" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/taskManager.js" />
+        <option value="$PROJECT_DIR$/app/views/main.html" />
+        <option value="$PROJECT_DIR$/app/views/done.html" />
+        <option value="$PROJECT_DIR$/app/views/expired.html" />
+        <option value="$PROJECT_DIR$/app/views/future.html" />
+        <option value="$PROJECT_DIR$/app/views/todays.html" />
+        <option value="$PROJECT_DIR$/app/views/undone.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/todays.js" />
       </list>
     </option>
   </component>
@@ -285,6 +310,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SmartCloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -322,28 +401,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartCloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SmartCloud" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="services" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -444,7 +501,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15972589" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15972589" sideWeight="0.6703663" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32963374" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -491,114 +548,122 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/undone.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/expired.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="9" selection-start="182" selection-end="182" vertical-scroll-proportion="0.11657143" vertical-offset="0" max-vertical-offset="875">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/undone.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="51" selection-start="409" selection-end="409" vertical-scroll-proportion="0.1423445" vertical-offset="0" max-vertical-offset="836">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/taskCreator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="5" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="527">
-          <folding />
+        <state line="10" column="30" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding>
+            <marker date="1381849378772" expanded="true" signature="103:438" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/done.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="2" selection-start="93" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/dateUtils.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="58" selection-start="399" selection-end="399" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/todays.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="349" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/todays.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="426" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/done.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="372" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="204">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/expired.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="70" selection-start="427" selection-end="427" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/future.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="75" selection-start="430" selection-end="430" vertical-scroll-proportion="-4.576923" vertical-offset="0" max-vertical-offset="221">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/expired.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="8" selection-start="246" selection-end="260" vertical-scroll-proportion="0.136" vertical-offset="0" max-vertical-offset="875">
-          <folding />
+        <state line="5" column="30" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding>
+            <marker date="1381849287127" expanded="true" signature="89:322" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/controllers/future.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="22" selection-start="259" selection-end="259" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+        <state line="10" column="30" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding>
+            <marker date="1381849423344" expanded="true" signature="102:438" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
+          <folding>
+            <marker date="1381849201532" expanded="true" signature="103:217" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="8" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/spec/controllers/taskManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="854">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="22" selection-start="1350" selection-end="1350" vertical-scroll-proportion="-11.115385" vertical-offset="221" max-vertical-offset="1462">
+        <state line="64" column="45" selection-start="3035" selection-end="3035" vertical-scroll-proportion="-22.884615" vertical-offset="493" max-vertical-offset="1462">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/dateUtils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="8" selection-start="207" selection-end="207" vertical-scroll-proportion="0.15925059" vertical-offset="0" max-vertical-offset="854">
+        <state line="13" column="13" selection-start="410" selection-end="419" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/taskManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="21" selection-start="1516" selection-end="1528" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="969">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="112" selection-start="188" selection-end="215" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/done.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="120" selection-start="230" selection-end="230" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="204">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/expired.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="120" selection-start="231" selection-end="231" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/future.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="120" selection-start="229" selection-end="229" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/undone.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="120" selection-start="232" selection-end="232" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="221">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/todays.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="120" selection-start="229" selection-end="229" vertical-scroll-proportion="0.040047113" vertical-offset="0" max-vertical-offset="849">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/todays.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="23" selection-start="327" selection-end="327" vertical-scroll-proportion="0.23887588" vertical-offset="0" max-vertical-offset="854">
           <folding />
         </state>
       </provider>
