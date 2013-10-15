@@ -1,0 +1,22 @@
+<article>
+	<h2 class="article-header">Новое задание</h2>
+	<form class="task-add" ng-submit="addTask()">
+		<label>Название задания: <input type="text" class="text-box" ng-model="newTask.taskName" placeholder="Название задания" required></label>
+		<label>Дата выполнения: <input type="date" class="text-box" ng-model="newTask.date" placeholder="Дата выполнения" required></label>
+		<input type="submit" value="Создать"/>
+	</form>
+</article>
+<article>
+	<h2 class="article-header">Список заданий</h2>
+	<ul class="task-list" ng-hide="tasks.length == 0">
+		<li ng-class="{'done': task.done}" ng-repeat="task in tasks">{{task.taskName}}
+			<button ng-click="finishTask(task)">Готово</button>
+			<button ng-click="removeTask($index)">Удалить</button>
+		</li>
+		<!-- <li class="today">Выбросить мусор</li>
+		<li class="upcoming">Сварить борщ</li>
+		<li class="expired">Пойти на работу</li>
+		<li class="done">Покакать</li> -->
+	</ul>
+	<span ng-show="tasks.length == 0">Нету ни одного задания</span>
+</article>

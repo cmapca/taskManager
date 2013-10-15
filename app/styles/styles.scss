@@ -1,0 +1,90 @@
+html, body, .wrapper {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+body {
+	background: #eee;
+}
+
+header {
+	@include clearfix;
+	@include background-image(linear-gradient(#555, #121212));
+}
+
+.wrapper > section {
+	@include clearfix;
+
+}
+
+footer {
+	@include clearfix;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: $footer-height;
+	background: #222;
+}
+
+.content-width {
+	width: $content-width;
+	margin: auto;
+}
+
+nav {
+	height: 42px;
+	line-height: 42px;
+
+	a {
+		color: #eee;
+		text-decoration: none;
+		margin-right: 8px;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+}
+
+article {
+	margin-top: $content-padding;
+}
+
+.article-header {
+	font-size: 22px;
+	padding: $content-padding;
+}
+
+.main-view {
+	position: absolute;
+	top: $header-height + $content-padding;
+	bottom: $footer-height + $content-padding;
+	left: 50%;
+	margin-left: -$content-width / 2;
+	background: #f5f5f5;
+	@include border-radius (4px);
+}
+
+.task-add {
+	padding: $content-padding;
+}
+.task-list {
+	padding: $content-padding;
+	li {
+		line-height: 24px;
+		height: 24px;
+		border-bottom: 1px solid #666;
+		&.today {
+			color: green;
+		}
+		&.upcoming {
+			color: blue;
+		}
+		&.expired {
+			color: red;
+		}
+		&.done {
+			color: gray;
+		}
+	}
+}
