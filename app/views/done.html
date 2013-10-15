@@ -1,0 +1,7 @@
+<h2 class="article-header">Список выполненных заданий</h2>
+<ul class="task-list" ng-hide="tasks.length == 0">
+    <li ng-class="{'done': task.done}" ng-repeat="task in filteredTasks">{{task.taskName}} - {{task.date}}
+        <button ng-click="removeTask($index)">Удалить</button>
+    </li>
+</ul>
+<span ng-show="tasks.length == 0">Нету ни одного выполненного задания</span>

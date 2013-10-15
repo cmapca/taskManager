@@ -28,15 +28,25 @@
       <div class="wrapper">
         <header>
           <nav class="content-width">
-            <a href="#!/">Все</a>
-            <a href="#!/">Выполненные</a>
-            <a href="#!/">Не выполненные</a>
-            <a href="#!/">Задания на сегодня</a>
-            <a href="#!/">Просроченные</a>
-            <a href="#!/">Грядущие</a>
+            <a href="#/">Все</a>
+            <a href="#/done">Выполненные</a>
+            <a href="#/undone">Не выполненные</a>
+            <a href="#/todays">Задания на сегодня</a>
+            <a href="#/expired">Просроченные</a>
+            <a href="#/future">Грядущие</a>
           </nav>
         </header>
-        <section class="main-view content-width" ng-view></section>
+        <section class="main-view content-width" ng-controller="TaskCreatorCtrl">
+            <article>
+                <h2 class="article-header">Новое задание</h2>
+                <form class="task-add" ng-submit="addTask()" name="newTaskForm">
+                    <label>Название задания: <input type="text" class="text-box" ng-model="newTask.taskName" placeholder="Название задания" required></label>
+                    <label>Дата выполнения: <input type="date" class="text-box" ng-model="newTask.date" placeholder="Дата выполнения" ng-pattern="datePattern" required></label>
+                    <input type="submit" value="Создать" ng-disabled="newTaskForm.$invalid"/>
+                </form>
+            </article>
+            <article ng-view></article>
+        </section>
         <footer>
           <div class="content-width">SmartCloud TaskManager</div>
         </footer>
@@ -51,6 +61,12 @@
       <script src="scripts/controllers/main.js"></script>
       <script src="scripts/services/taskResource.js"></script>
       <script src="scripts/services/dateUtils.js"></script>
+      <script src="scripts/controllers/done.js"></script>
+      <script src="scripts/controllers/taskCreator.js"></script>
+      <script src="scripts/controllers/undone.js"></script>
+      <script src="scripts/controllers/todays.js"></script>
+      <script src="scripts/controllers/expired.js"></script>
+      <script src="scripts/controllers/future.js"></script>
       <!-- endbuild -->
 
       <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
