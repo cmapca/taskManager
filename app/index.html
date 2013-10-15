@@ -37,18 +37,26 @@
           </nav>
         </header>
         <section class="main-view content-width" ng-controller="TaskManagerCtrl">
-            <article>
-                <h2 class="article-header">Новое задание</h2>
-                <form class="task-add" ng-submit="addTask()" name="newTaskForm">
-                    <label>Название задания: <input type="text" class="text-box" ng-model="newTask.taskName" placeholder="Название задания" required></label>
-                    <label>Дата выполнения: <input type="date" class="text-box" ng-model="newTask.date" placeholder="Дата выполнения" ng-pattern="datePattern" required></label>
-                    <input type="submit" value="Создать" ng-disabled="newTaskForm.$invalid"/>
-                </form>
-            </article>
-            <article ng-view></article>
+          <article>
+            <h2 class="article-header">Новое задание</h2>
+            <form class="task-add" ng-submit="addTask()" name="newTaskForm">
+              <label>
+                <span class="label-text">Название задания:</span>
+                <input type="text" name="taskName" class="text-box" ng-model="newTask.taskName" placeholder="Название задания" required>
+                <span class="error" ng-show="newTaskForm.taskName.$invalid">Название задания не может быть пустым</span>
+              </label>
+              <label>
+                <span class="label-text">Дата выполнения:</span>
+                <input type="text" name="taskDate" class="text-box" ng-model="newTask.date" placeholder="Дата выполнения" ng-pattern="datePattern" required>
+                <span class="error" ng-show="newTaskForm.taskDate.$invalid">Дата должна быть в формате 'дд.мм.гггг'</span>
+              </label>
+              <input class="btn" type="submit" value="Создать" ng-disabled="newTaskForm.$invalid"/>
+            </form>
+          </article>
+          <article ng-view></article>
         </section>
         <footer>
-          <div class="content-width">SmartCloud TaskManager</div>
+          <div class="content-width">TaskManager</div>
         </footer>
       </div>
 
