@@ -1,88 +1,109 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <!-- build:css styles/main.css -->
-  <link rel="stylesheet" href="styles/main.css">
-  <!-- endbuild -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
 </head>
 <body ng-app="taskManagerApp">
-    <!--[if lt IE 7]>
-      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-      <![endif]-->
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser
+    today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better
+    experience this site.</p>
+<![endif]-->
 
-    <!--[if lt IE 9]>
-      <script src="components/es5-shim/es5-shim.js"></script>
-      <script src="components/json3/lib/json3.min.js"></script>
-      <![endif]-->
+<!--[if lt IE 9]>
+<script src="components/es5-shim/es5-shim.js"></script>
+<script src="components/json3/lib/json3.min.js"></script>
+<![endif]-->
 
-      <!-- Add your site or application content here -->
-      <div class="wrapper">
-        <header>
-          <nav class="content-width">
+<!-- Add your site or application content here -->
+<div class="wrapper">
+    <header>
+        <nav class="content-width">
             <a href="#/">Все</a>
             <a href="#/done">Выполненные</a>
             <a href="#/undone">Не выполненные</a>
             <a href="#/todays">Задания на сегодня</a>
             <a href="#/expired">Просроченные</a>
             <a href="#/future">Грядущие</a>
-          </nav>
-        </header>
-        <section class="main-view content-width" ng-controller="TaskManagerCtrl">
-          <article>
+        </nav>
+    </header>
+    <section class="main-view content-width" ng-controller="TaskManagerCtrl">
+        <article>
             <h2 class="article-header">Новое задание</h2>
+
             <form class="task-add" ng-submit="addTask()" name="newTaskForm">
-              <label>
-                <span class="label-text">Название задания:</span>
-                <input type="text" name="taskName" class="text-box" ng-model="newTask.taskName" placeholder="Название задания" required>
-                <span class="error" ng-show="newTaskForm.taskName.$invalid">Название задания не может быть пустым</span>
-              </label>
-              <label>
-                <span class="label-text">Дата выполнения:</span>
-                <input type="text" name="taskDate" class="text-box" ng-model="newTask.date" placeholder="Дата выполнения" ng-pattern="datePattern" required>
-                <span class="error" ng-show="newTaskForm.taskDate.$invalid">Дата должна быть в формате 'дд.мм.гггг'</span>
-              </label>
-              <input class="btn" type="submit" value="Создать" ng-disabled="newTaskForm.$invalid"/>
+                <label>
+                    <span class="label-text">Название задания:</span>
+                    <input type="text" name="taskName" class="text-box" ng-model="newTask.taskName"
+                           placeholder="Название задания" required>
+                    <span class="error"
+                          ng-show="newTaskForm.taskName.$invalid">Название задания не может быть пустым</span>
+                </label>
+                <label>
+                    <span class="label-text">Дата выполнения:</span>
+                    <input type="text" name="taskDate" class="text-box" ng-model="newTask.date"
+                           placeholder="Дата выполнения" ng-pattern="datePattern" required>
+                    <span class="error"
+                          ng-show="newTaskForm.taskDate.$invalid">Дата должна быть в формате 'дд.мм.гггг'</span>
+                </label>
+                <label>
+                    <span class="label-text">Категория:</span>
+                    <select ng-options="cat.id as cat.title for cat in categories" ng-model="newTask.category"></select>
+                </label>
+                <input class="btn" type="submit" value="Создать" ng-disabled="newTaskForm.$invalid"/>
             </form>
-          </article>
-          <article ng-view></article>
-        </section>
-        <footer>
-          <div class="content-width">TaskManager</div>
-        </footer>
-      </div>
+        </article>
+        <article ng-view></article>
+    </section>
+    <footer>
+        <div class="content-width">TaskManager</div>
+    </footer>
+</div>
 
 
-      <script src="components/angular/angular.js"></script>
-      <script src="components/underscore/underscore.js"></script>
+<script src="components/angular/angular.js"></script>
+<script src="components/underscore/underscore.js"></script>
 
-      <!-- build:js scripts/scripts.js -->
-      <script src="scripts/app.js"></script>
-      <script src="scripts/controllers/main.js"></script>
-      <script src="scripts/services/taskResource.js"></script>
-      <script src="scripts/services/dateUtils.js"></script>
-      <script src="scripts/controllers/done.js"></script>
-      <script src="scripts/controllers/taskManager.js"></script>
-      <script src="scripts/controllers/undone.js"></script>
-      <script src="scripts/controllers/todays.js"></script>
-      <script src="scripts/controllers/expired.js"></script>
-      <script src="scripts/controllers/future.js"></script>
-      <!-- endbuild -->
+<!-- build:js scripts/scripts.js -->
+<script src="scripts/app.js"></script>
+<script src="scripts/controllers/main.js"></script>
+<script src="scripts/services/taskResource.js"></script>
+<script src="scripts/services/dateUtils.js"></script>
+<script src="scripts/controllers/done.js"></script>
+<script src="scripts/controllers/taskManager.js"></script>
+<script src="scripts/controllers/undone.js"></script>
+<script src="scripts/controllers/todays.js"></script>
+<script src="scripts/controllers/expired.js"></script>
+<script src="scripts/controllers/future.js"></script>
+<script src="scripts/services/categories.js"></script>
+<!-- endbuild -->
 
-      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-      <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-      </script>
-    </body>
-    </html>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+    var _gaq = [
+        ['_setAccount', 'UA-XXXXX-X'],
+        ['_trackPageview']
+    ];
+    (function (d, t) {
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g, s)
+    }(document, 'script'));
+</script>
+</body>
+</html>

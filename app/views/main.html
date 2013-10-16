@@ -1,6 +1,12 @@
-<h2 class="article-header">Список всех заданий</h2>
+<h2 class="article-header">Список всех заданий
+    <label class="pull-right">
+        <span class="label-text">Категория:</span>
+        <select ng-options="cat.id as cat.title for cat in categories" ng-model="category"></select>
+    </label>
+</h2>
 <ul class="task-list" ng-hide="tasks.length == 0">
-    <li ng-class="{'done': task.done}" ng-repeat="task in tasks">На {{localizeDate(task.date)}} запланировано: {{task.taskName}}
+    <li ng-class="{'done': task.done}" ng-repeat="task in tasks | filter:categoryFilter">На {{localizeDate(task.date)}}
+        запланировано: {{task.taskName}}
         <button ng-click="removeTask(task.id)" class="pull-right">Удалить</button>
         <button ng-click="finishTask(task.id)" class="pull-right" ng-hide="task.done">Готово</button>
     </li>
